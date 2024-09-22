@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/WebPreview.png" />
+    <meta property="og:description"
+        content="This is a Notes Web Application which can create, store, edit your notes." />
+    <meta property="og:title" content="Aayush's Notes Project" />
+    <link rel="icon" href="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/icons.png" type="image/x-icon" />
+    <title>Personal Notes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/logo.png" alt="Logo" class="header__logo">
+        <h1 class="header__title">Notes</h1>
+        <button id="homeBtn" type="button" class="header__button">Home</button>
+        <div class="search-box">
+            <form id="searchForm" class="search-box__form">
+                <input type="text" placeholder="Search Notes" id="searchInput" class="search-box__input">
+                <button type="submit" class="search-box__button">Search</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <section class="notes-section">
+            <div id="heading" class="notes-section__heading">
+                <h5 class="notes-section__title">My Notes:</h5>
+                <button id="newNoteBtn" type="button" class="notes-section__new-note-button">New Note</button>
+            </div>
+            <div id="searchResults" hidden>
+                <h5 class="search-results__title">Search Results:</h5>
+            </div>
+            <ol class="notes-list"></ol>
+        </section>
+    </main>
+    <aside class="aside">
+        <div id="noteForm" hidden>
+            <h5 class="aside__title">New Note</h5>
+            <form id="newNoteForm" class="aside__form">
+                <label for="titleInput" class="aside__label">Title</label>
+                <input type="text" id="titleInput" class="aside__input" required>
+                <label for="textInput" class="aside__label">Notes</label>
+                <textarea id="textInput" class="aside__textarea" required></textarea>
+                <button type="submit" class="aside__button">Add Note</button>
+            </form>
+        </div>
+        <div id="editForm" hidden>
+            <h5 class="aside__title">Edit Note</h5>
+            <form id="editNoteForm" class="aside__form">
+                <label for="editTitleInput" class="aside__label">Title</label>
+                <input type="text" id="editTitleInput" class="aside__input" required>
+                <label for="editTextInput" class="aside__label">Notes</label>
+                <textarea id="editTextInput" class="aside__textarea" required></textarea>
+                <button type="submit" class="aside__button">Save Changes</button>
+            </form>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/aayush-jha-692019226/" class="footer__link">
+                <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/linkedin.png" alt="LinkedIn" class="footer__icon">
+            </a>
+            <a href="https://github.com/aayushjha323" class="footer__link">
+                <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/github.png" alt="GitHub" class="footer__icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
